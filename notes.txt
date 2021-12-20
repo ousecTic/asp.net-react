@@ -1,0 +1,44 @@
+- Walking Skeleton is a tiny implementation of they system that perform a small end-to-end function
+
+=====Application Architecture====
+
+- Domain : classes the set the foundation of our application (center)
+
+- Application : Process Business Logic (middle) 
+
+- API : Dependency on application. It receives http request
+
+- Persistence interacts with the domain and the application interact with the persistence. Provide connection to DB and translate the code into SQL queries
+
+- Transistive is a verb that requiers an object to receive the action (the thing that receive the action)
+
+
+=== command for dotnet cli ===
+
+sln - a container for our project (info of the project env and state)
+
+dotnet new sln : create solution file
+
+dotnet new webapi -n API : create a webapi folder called "API"
+
+- classLib is a DLL that contains program code , data, resources that can be use by other program
+
+- what is DLL - a library that contains functions and codes that can be by more than on program
+
+- splitting your code to separate library make it independent from the rest of the code
+
+- decouple means to separate
+
+- a csproj is a file that shows how to compile your code into a DLL or a binary file
+
+- dotnet sln add Application (add the application csproj to the solution file)
+
+- We create the library relationship dependency with the dotnet add reference 
+
+======== moving into .net 6 ========
+
+- the using make it easy to import things globally
+
+- nullable allow us to have null values
+
+====Reviewing the project====
