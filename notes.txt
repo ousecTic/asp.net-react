@@ -41,4 +41,14 @@ dotnet new webapi -n API : create a webapi folder called "API"
 
 - nullable allow us to have null values
 
-====Reviewing the project====
+====Flow of Control====
+
+usecase is the application layer
+
+api controller (query/command) => Mediator.Send() => Mediator Handler => Object out => api controller 
+
+CQRS (flow of the data)
+- Command (modify)
+- Query (read)
+
+When you have multiple database than cqrs will make sense
