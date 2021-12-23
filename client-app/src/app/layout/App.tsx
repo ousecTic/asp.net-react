@@ -28,7 +28,8 @@ function App() {
     setSelectedActivity(undefined);
   }
 
-  function handleFormOpen(id? : string) {
+  function handleFormOpen(id?: string) {
+    //so if we select an activity, it will show the activity, If we click the create button (not pass an id) then it is going to clear it for us
     id ? handleSelectActivity(id) : handleCancelSelectActivity();
 
     setEditMode(true);
